@@ -59,14 +59,17 @@
 		</div>
 
 		<!-- Sidebar on small screens when clicking the menu icon -->
-		<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-			<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"><i class="fa fa-close"></i> Close</a>
-			<a href="#home" onClick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
-			<a href="#about" onClick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-question-circle"></i> ABOUT</a>
-			<a href="#projects" onClick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-file"></i> PROJECTS</a>
-			<a href="#contact" onClick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-			<a href="./resumes/resume052217.pdf" onClick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-file-pdf-o"></i> RESUME</a>
-		</nav>
+		<div class="w3-sidebar w3-bar-block w3-card-2 w3-grey w3-animate-right" style="display:none;z-index:5;right:0;" id="mySidebar">
+			<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 w3-hover-dark-grey"><i class="fa fa-close"></i> Close</a>
+			<a href="#home" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-home"></i> HOME</a>
+			<a href="#about" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-question-circle"></i> ABOUT</a>
+			<a href="#projects" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-file"></i> PROJECTS</a>
+			<a href="#contact" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-envelope"></i> CONTACT</a>
+			<a href="./resumes/resume052217.pdf" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-file-pdf-o"></i> RESUME</a>
+		</div>
+		
+		<!-- Overlay -->
+		<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
 		<!-- Header with full-height image -->
 		<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
@@ -175,18 +178,22 @@
 		<script>		
 			// Toggle between showing and hiding the sidebar when clicking the menu icon
 			var mySidebar = document.getElementById("mySidebar");
+			var myOverlay = document.getElementById("myOverlay");
 
 			function w3_open() {
 				if (mySidebar.style.display === 'block') {
 					mySidebar.style.display = 'none';
+					myOverlay.style.display = 'none';
 				} else {
 					mySidebar.style.display = 'block';
+					myOverlay.style.display = 'block';
 				}
 			}
 
 			// Close the sidebar with the close button
 			function w3_close() {
-				mySidebar.style.display = "none";
+				mySidebar.style.display = 'none';
+				myOverlay.style.display = 'none';
 			}
 		</script>
 	</body>
