@@ -3,11 +3,13 @@
 	
 	<!-- File: index.html -->
 	<!-- Author: Jacob Hittinger -->
-	<!-- Last Updated: 7/15/17 -->
+	<!-- Last Updated: 7/24/17 -->
+	
 	<!-- Layout based on an example from W3 - https://www.w3schools.com/w3css/tryw3css_templates_startup.htm -->
 	<!-- Powered by W3.CSS - https://www.w3schools.com/w3css/ -->
-	<!-- Font is Google API's Raleway -->
-	<!-- Icons from Font Awesome -->
+	<!-- Font is Google API's Raleway - https://fonts.google.com/specimen/Raleway-->
+	<!-- Icons from Font Awesome - http://fontawesome.io/icons/ -->
+	<!-- Icons from DEVICON - http://konpa.github.io/devicon/ -->
 
 	<!-- Head -->
 	<head>
@@ -18,6 +20,7 @@
 		<link rel="stylesheet" href="./css/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 		
 		<style>
 			body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -43,10 +46,11 @@
 		<div class="w3-top">
 			<div class="w3-bar w3-light-grey w3-card-2" id="myNavbar">
 				<a href="#home" class="w3-bar-item w3-button"><img src="./pictures/logo.png" width="23" height="23" "w3-hover-opacity"></a>
-				<a href="./resumes/resume052217.pdf" class="w3-bar-item w3-button"><i class="fa fa-file-pdf-o"></i> RESUME</a>
+				<a href="./resumes/jhittingerResume.pdf" class="w3-bar-item w3-button"><i class="fa fa-file-pdf-o"></i> RESUME</a>
 				
 				<!-- Right-sided navbar links -->
 				<div class="w3-right w3-hide-small">
+					<a href="#about" class="w3-bar-item w3-button"><i class="fa fa-question-circle"></i> ABOUT</a>
 					<a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-file"></i> PROJECTS</a>
 					<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
 				</div>
@@ -62,9 +66,10 @@
 		<div class="w3-sidebar w3-bar-block w3-card-2 w3-grey w3-animate-right" style="display:none;z-index:5;right:0;" id="mySidebar">
 			<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 w3-hover-dark-grey w3-border-light-grey w3-border-bottom"><i class="fa fa-close"></i> Close</a>
 			<a href="#home" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-home"></i> HOME</a>
+			<a href="#about" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-question-circle"></i> ABOUT</a>
 			<a href="#projects" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-file"></i> PROJECTS</a>
 			<a href="#contact" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-envelope"></i> CONTACT</a>
-			<a href="./resumes/resume052217.pdf" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey w3-border-light-grey w3-border-bottom"><i class="fa fa-file-pdf-o"></i> RESUME</a>
+			<a href="./resumes/jhittingerResume.pdf" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey w3-border-light-grey w3-border-bottom"><i class="fa fa-file-pdf-o"></i> RESUME</a>
 			<a href="https://www.github.com/jacobhittinger" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-github w3-hover-opacity"></i> GitHub</a>
 			<a href="https://www.linkedin.com/in/jacobhittinger/" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-linkedin w3-hover-opacity"></i> LinkedIn</a>
 			<a href="https://www.facebook.com/jacobhittinger" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a>
@@ -88,6 +93,43 @@
 			</div>
 		</header>
 
+		<!-- About Section -->
+		<div class="w3-container w3-grey" style="padding:128px 16px" id="about">
+			<h3 class="w3-center">ABOUT</h3>
+			<div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+				<div class="w3-card-2">
+					<div class="w3-container w3-light-grey">
+						<p class="w3-large">
+							My name is Jacob Hittinger. I am currently a student at Eastern Washington University (EWU), and will 
+							be graduating with a Bachelor of Science in Computer Science come December of this year. Some of my 
+							hobbies include coding, gaming, and playing hockey.
+							</br></br>
+							My technological background is fairly diverse, containing experience in areas such as software 
+							engineering, security, parallel/cloud computing, mobile development, networking, and databases.
+							</br></br>
+							During my studies at EWU, I have been working as a tutor in the Department of Computer Science’s 
+							tutor lab, as an office aide in the Department of Engineering & Design, and as a live streaming 
+							broadcaster for the Hockey Club.
+							</br></br>
+							Below, you can find some of the projects that I have worked on, and even further below, you can find 
+							my contact information. Feel free to get in touch with me if you have any questions or inquiries; I’ll be 
+							looking forward to hearing from you.
+						</p>
+						<div class="w3-center">
+							<i class="devicon-java-plain w3-xxlarge"></i>
+							<i class="devicon-c-line w3-xxlarge"></i>
+							<i class="devicon-mysql-plain w3-xxlarge"></i>
+							<i class="devicon-android-plain w3-xxlarge"></i>
+							<i class="devicon-amazonwebservices-original w3-xxlarge"></i>
+							<i class="devicon-csharp-line w3-xxlarge"></i>
+							<i class="devicon-python-plain w3-xxlarge"></i>
+							<i class="devicon-visualstudio-plain w3-xxlarge"></i>
+						</div>
+						</br>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Projects Section -->
 		<div class="w3-container w3-grey" style="padding:128px 16px" id="projects">
 			<h3 class="w3-center">PROJECTS</h3>
@@ -99,7 +141,7 @@
 							<h3>Image Explorer</h3>
 							<p class="w3-opacity">Eastern Washington University</p>
 							<p>A cross-platform software package for browsing and managing an image collection. Wrapped in an intuitive GUI, Image Explorer features tagging functionalities, along with usability from multiple computers, as the collection and tagging data live on a server.</p>
-							<p><a href="https://www.github.com/TeamImageExplorer/ImageExplorer" class="w3-button w3-grey w3-block"><i class="fa fa-github"></i> See more</button></a></p>
+							<p><a href="https://www.github.com/TeamImageExplorer/ImageExplorer" class="w3-button w3-grey w3-block"><i class="fa fa-github w3-large"></i> See more</button></a></p>
 						</div>
 					</div>
 				</div>
@@ -109,7 +151,7 @@
 							<h3>Bash Replica</h3>
 							<p class="w3-opacity">Eastern Washington University</p>
 							<p>As the name suggests, this is a replica of the well known Unix shell: Bash.</p>
-							<p><a href="https://github.com/jacobhittinger/BashReplica" class="w3-button w3-grey w3-block"><i class="fa fa-github"></i> See more</button></a></p>
+							<p><a href="https://github.com/jacobhittinger/BashReplica" class="w3-button w3-grey w3-block"><i class="fa fa-github w3-large"></i> See more</button></a></p>
 						</div>
 					</div>
 				</div>
@@ -119,7 +161,7 @@
 							<h3>LAN Chat</h3>
 							<p class="w3-opacity">Eastern Washington University</p>
 							<p>This is a chat room system for use on a local network. Multiple chat rooms may be hosted, each able to accomodate a set number of users. The users can move between rooms freely, play Rock/Paper/Scissors, and access a shared "bulletin board," which displays messages previously left there.</p>
-							<p><a href="https://github.com/jacobhittinger/LANChat" class="w3-button w3-grey w3-block"><i class="fa fa-github"></i> See more</button></a></p>
+							<p><a href="https://github.com/jacobhittinger/LANChat" class="w3-button w3-grey w3-block"><i class="fa fa-github w3-large"></i> See more</button></a></p>
 						</div>
 					</div>
 				</div>
@@ -131,8 +173,11 @@
 			<h3 class="w3-center">CONTACT</h3>
 			<p class="w3-center">Looking to fill a spot in your company?</br>Have a cool project idea?</br>Maybe you just want to talk about code.</br>Whatever it is, you can contact me here:</p>
 			<div class="w3-center">
-				</br>
-				<p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>jacob.hittinger@gmail.com</p>
+				<p>
+					<i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>
+					<a href="mailto:jacob@hittinger.io"
+						target="_top">jacob@hittinger.io</a>
+				</p>
 			</div>
 		</div>
 
@@ -141,20 +186,20 @@
 
 		<!-- Footer -->
 		<footer class="w3-center w3-black w3-padding-32">
-			<div class="w3-xlarge w3-text-dark-grey w3-section">
+			<div class="w3-section w3-text-grey w3-xxlarge">
 				<a href="https://www.github.com/jacobhittinger"><i class="fa fa-github w3-hover-opacity"></i></a>
 				<a href="https://www.linkedin.com/in/jacobhittinger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
 				<a href="https://www.facebook.com/jacobhittinger"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
 				<a href="https://www.twitter.com/jacobhittinger"><i class="fa fa-twitter w3-hover-opacity"></i></a>
 			</div>
-			<p class="w3-text-dark-grey">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
 		</footer>
-
+		
 		<script>		
 			// Toggle between showing and hiding the sidebar when clicking the menu icon
 			var mySidebar = document.getElementById("mySidebar");
 			var myOverlay = document.getElementById("myOverlay");
 
+			// Open the sidebar, turn on overlay shadow
 			function w3_open() {
 				if (mySidebar.style.display === 'block') {
 					mySidebar.style.display = 'none';
@@ -165,7 +210,7 @@
 				}
 			}
 
-			// Close the sidebar with the close button
+			// Close the sidebar, turn off overlay shadow
 			function w3_close() {
 				mySidebar.style.display = 'none';
 				myOverlay.style.display = 'none';
