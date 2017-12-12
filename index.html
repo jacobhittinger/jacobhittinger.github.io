@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-	
+
 	<!-- File: index.html -->
 	<!-- Author: Jacob Hittinger -->
 	<!-- Last Updated: 10/26/17 -->
-	
+
 	<!-- Powered by W3.CSS - https://www.w3schools.com/w3css/ -->
 	<!-- Layout based on an example from W3 - https://www.w3schools.com/w3css/tryw3css_templates_startup.htm -->
 	<!-- Font is Google API's Raleway - https://fonts.google.com/specimen/Raleway-->
@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		
+
 		<style>
 			body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 			body, html {
@@ -95,14 +95,14 @@
 				<!-- Left-sided navbar links -->
 				<a href="#home" class="w3-bar-item w3-button"><img src="./pictures/logos/logo.png" width="23" height="23" "w3-hover-opacity"></a>
 				<a href="./resumes/jhittingerResume.pdf" class="w3-bar-item w3-button"><i class="fa fa-file-pdf-o"></i> RESUME</a>
-				
+
 				<!-- Right-sided navbar links -->
 				<div class="w3-right w3-hide-small">
 					<a href="#about" class="w3-bar-item w3-button"><i class="fa fa-question-circle"></i> ABOUT</a>
 					<a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-file"></i> PROJECTS</a>
 					<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
 				</div>
-				
+
 				<!-- Hide right-floated links on small screens and replace them with a menu icon -->
 				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
 					<i class="fa fa-bars"></i>
@@ -123,28 +123,28 @@
 			<a href="https://www.facebook.com/jacobhittinger" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a>
 			<a href="https://www.twitter.com/jacobhittinger" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-twitter w3-hover-opacity"></i> Twitter</a>
 		</div>
-		
+
 		<!-- Overlay -->
 		<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
 		<!-- Header with full-height image -->
 		<script>
 			randomBackground();
-			
+
 			// Build header line dynamically, picking a random background from the pictures folder
 			function randomBackground() {
 				var rand = Math.floor(Math.random() * 9);
 				var headerStr = '<header class="bgimg-' + rand + ' w3-display-container w3-grayscale-min" id="home">';
 				document.write(headerStr); document.close();
 			}
-			
+
 			// The following line is generated. '#' replaced by random value.
 			// <header class="bgimg-# w3-display-container w3-grayscale-min" id="home">
 		</script>
 			<div class="w3-display-middle w3-center w3-text-black" style="padding:48px">
 				<span class="w3-xxxlarge" style="text-shadow:2px 2px 0 #8e8e8e"><b>Jacob Hittinger</b></span><br>
-				<span class="w3-xxlarge" style="text-shadow:1px 1px 0 #8e8e8e"><b>Software developer.</b></span>
-			</div> 
+				<!--<span class="w3-xxlarge" style="text-shadow:1px 1px 0 #8e8e8e"><b>Software engineer. Security enthusiast. Nerd.</b></span>-->
+			</div>
 			<div class="w3-display-bottomleft w3-text-black w3-xxlarge" style="padding:16px">
 				<a href="https://www.github.com/jacobhittinger"><i class="fa fa-github w3-hover-opacity"></i></a>
 				<a href="https://www.linkedin.com/in/jacobhittinger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
@@ -160,22 +160,21 @@
 				<div class="w3-card-2">
 					<div class="w3-container w3-light-grey">
 						<p class="w3-large">
-							My name is Jacob Hittinger. I am currently a student at Eastern Washington University (EWU), and will 
-							be graduating with a Bachelor of Science in Computer Science come December of this year. My 
-							hobbies include coding, gaming, and playing hockey.
+							My name is Jacob Hittinger. I have recently graduated from Eastern Washington University (EWU), with
+							a Bachelor of Science in Computer Science (BSCS). My hobbies include coding, gaming, and playing hockey.
 							</br>
-							My technological background is fairly diverse, containing experience in areas such as software 
+							During my studies at EWU, I had been working as a tutor in the Department of Computer Science’s
+							tutor lab, as an office aide in the Department of Engineering & Design, and as a live streaming
+							broadcast technician for the Hockey Club.
+							</br>
+							My technological background is fairly diverse, containing experience in areas such as software
 							engineering, security, parallel/cloud computing, mobile development, networking, and databases.
-							</br>
-							During my studies at EWU, I have been working as a tutor in the Department of Computer Science’s 
-							tutor lab, as an office aide in the Department of Engineering & Design, and as a live streaming 
-							broadcaster for the Hockey Club.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- Projects Section -->
 		<div class="w3-container w3-grey" style="padding:128px 16px" id="projects">
 			<h3 class="w3-center">PROJECTS</h3>
@@ -191,7 +190,7 @@
 							<i class="devicon-linux-plain w3-xlarge w3-right"></i>
 							<i class="devicon-windows8-original w3-xlarge w3-right"></i>
 							<p class="w3-opacity">Eastern Washington University</p>
-							
+
 							<p><a href="https://www.github.com/TeamImageExplorer/ImageExplorer" class="w3-button w3-grey w3-block"><i class="fa fa-github w3-xlarge"></i> See more</button></a></p>
 						</div>
 					</div>
@@ -204,14 +203,14 @@
 							<i class="devicon-c-line w3-xlarge"></i>
 							<i class="devicon-linux-plain w3-xlarge w3-right"></i>
 							<p class="w3-opacity">Eastern Washington University</p>
-							
+
 							<p><a href="https://github.com/jacobhittinger/BashReplica" class="w3-button w3-grey w3-block"><i class="fa fa-github w3-xlarge"></i> See more</button></a></p>
 						</div>
 					</div>
 				</div>
-				
-				
-				
+
+
+
 				<div class="w3-col l3 m6 w3-margin-bottom">
 					<div class="w3-card">
 					<img src="./pictures/projects/LANChat.png" alt="Image Explorer" style="width:100%">
@@ -220,12 +219,12 @@
 							<i class="devicon-c-line w3-xlarge"></i>
 							<i class="devicon-linux-plain w3-xlarge w3-right"></i>
 							<p class="w3-opacity">Eastern Washington University</p>
-							
+
 							<p><a href="https://github.com/jacobhittinger/LANChat" class="w3-button w3-grey w3-block"><i class="fa fa-github w3-xlarge"></i> See more</button></a></p>
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 
@@ -263,15 +262,15 @@
 				<a href="https://www.twitter.com/jacobhittinger"><i class="fa fa-twitter w3-hover-opacity"></i></a>
 			</div>
 			<div class="w3-center">
-				
+
 				Powered by <a href="https://www.w3schools.com/w3css/">W3.CSS</a></br>
 				Original template courtesy of <a href="https://www.w3schools.com/w3css/tryw3css_templates_startup.htm">W3</a></br>
 				Dev-themed icons thanks to <a href="https://konpa.github.io/devicon/">DEVICON</a></br>
 				Header images provided by <a href="https://www.instagram.com/lit__luke">Luke Hittinger</a>
-				
+
 			</div>
 		</footer>
-		
+
 		<script>
 			// Toggle between showing and hiding the sidebar when clicking the menu icon
 			var mySidebar = document.getElementById("mySidebar");
