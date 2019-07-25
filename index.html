@@ -1,13 +1,238 @@
-<!-- File: index.html -->
-<!-- Author: Jacob Hittinger -->
-<!-- Last Updated: 11/12/18 -->
-
 <!DOCTYPE html>
 <html>
 
+	<!-- File: index.html -->
+	<!-- Author: Jacob Hittinger -->
+	<!-- Last Updated: 7/24/19 -->
+
+	<!-- Powered by W3.CSS - https://www.w3schools.com/w3css/ -->
+	<!-- Layout based on an example from W3 - https://www.w3schools.com/w3css/tryw3css_templates_startup.htm -->
+	<!-- Font is Google API's Raleway - https://fonts.google.com/specimen/Raleway-->
+	<!-- Icons from Font Awesome - http://fontawesome.io/icons/ -->
+	<!-- Icons from DEVICON (To view license, visit jacobhittinger.com/licenses/deviconLICENSE.txt) - https://konpa.github.io/devicon/ -->
+	<!-- Header backgrounds from Luke Hittinger - https://www.instagram.com/lit__luke -->
+
+	<!-- Head -->
+	<head>
+		<title>Jacob Hittinger</title>
+		<link rel="icon" href="./pictures/logos/logo.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+		<style>
+			body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+			body, html {
+				height: 100%;
+				line-height: 1.8;
+			}
+			.bgimg-0 {
+				background-position: center;
+				background-size: cover;
+				background-image: url("./pictures/backgrounds/luke0.jpg");
+				min-height: 100%;
+			}
+			.bgimg-1 {
+				background-position: center;
+				background-size: cover;
+				background-image: url("./pictures/backgrounds/luke1.jpg");
+				min-height: 100%;
+			}
+			.bgimg-2 {
+				background-position: center;
+				background-size: cover;
+				background-image: url("./pictures/backgrounds/luke2.jpg");
+				min-height: 100%;
+			}
+			.bgimg-3 {
+				background-position: center;
+				background-size: cover;
+				background-image: url("./pictures/backgrounds/luke3.jpg");
+				min-height: 100%;
+			}
+			.bgimg-4 {
+				background-position: center;
+				background-size: cover;
+				background-image: url("./pictures/backgrounds/luke4.jpg");
+				min-height: 100%;
+			}
+			.bgimg-5 {
+				background-position: center;
+				background-size: cover;
+				background-image: url("./pictures/backgrounds/luke5.jpg");
+				min-height: 100%;
+			}
+			.bgimg-6 {
+				background-position: center;
+				background-size: cover;
+				background-image: url("./pictures/backgrounds/luke6.jpg");
+				min-height: 100%;
+			}
+			.bgimg-7 {
+				background-position: center;
+				background-size: cover;
+				background-image: url("./pictures/backgrounds/luke7.jpg");
+				min-height: 100%;
+			}
+			.bgimg-8 {
+				background-position: center;
+				background-size: cover;
+				background-image: url("./pictures/backgrounds/mountains.jpg");
+				min-height: 100%;
+			}
+			.w3-bar .w3-button {
+				padding: 16px;
+			}
+		</style>
+	</head>
+
 	<body>
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+			<div class="w3-bar w3-light-grey w3-card-2" id="myNavbar">
+				<!-- Left-sided navbar links -->
+				<a href="#home" class="w3-bar-item w3-button"><img src="./pictures/logos/logo.png" width="23" height="23" "w3-hover-opacity"></a>
+
+				<!-- Right-sided navbar links -->
+				<div class="w3-right w3-hide-small">
+					<a href="https://www.github.com/jacobhittinger" class="w3-bar-item w3-button"><i class="fa fa-github w3-large"></i></a>
+					<a href="https://www.linkedin.com/in/jacobhittinger/" class="w3-bar-item w3-button"><i class="fa fa-linkedin w3-large"></i></a>
+					<a href="https://www.twitter.com/jacobhittinger" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.facebook.com/jacobhittinger" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+					<a href="#about" class="w3-bar-item w3-button"><i class="fa fa-question-circle"></i> ABOUT</a>
+					<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+				</div>
+
+				<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</div>
+
+		<!-- Sidebar on small screens when clicking the menu icon -->
+		<div class="w3-sidebar w3-bar-block w3-card-2 w3-grey w3-animate-right" style="display:none;z-index:5;right:0;" id="mySidebar">
+			<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 w3-hover-dark-grey w3-border-light-grey w3-border-bottom"><i class="fa fa-close"></i> Close</a>
+			<a href="#home" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-home"></i> HOME</a>
+			<a href="#about" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-question-circle"></i> ABOUT</a>
+			<a href="#contact" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-envelope"></i> CONTACT</a>
+			<a href="https://www.github.com/jacobhittinger" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-github w3-hover-opacity"></i> GitHub</a>
+			<a href="https://www.linkedin.com/in/jacobhittinger/" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-linkedin w3-hover-opacity"></i> LinkedIn</a>
+			<a href="https://www.twitter.com/jacobhittinger" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-twitter w3-hover-opacity"></i> Twitter</a>
+			<a href="https://www.facebook.com/jacobhittinger" onClick="w3_close()" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a>
+		</div>
+
+		<!-- Overlay -->
+		<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+		<!-- Header with full-height image -->
+		<script>
+			randomBackground();
+
+			// Build header line dynamically, picking a random background from the pictures folder
+			// The following line is generated. '#' replaced by random value
+			// <header class="bgimg-# w3-display-container w3-grayscale-min" id="home">
+			function randomBackground() {
+				var rand = Math.floor(Math.random() * 9);
+				var headerStr = '<header class="bgimg-' + rand + ' w3-display-container w3-grayscale-min" id="home">';
+				document.write(headerStr); document.close();
+			}
+		</script>
+			<div class="w3-display-middle w3-center w3-text-black" style="padding:48px">
+				<span class="w3-xxxlarge" style="text-shadow:2px 2px 0 #8e8e8e"><b>Jacob Hittinger</b></span><br>
+			</div>
+			<div class="w3-display-bottomleft w3-text-black w3-xxlarge" style="padding:16px">
+				<a href="https://www.github.com/jacobhittinger"><i class="fa fa-github w3-hover-opacity"></i></a>
+				<a href="https://www.linkedin.com/in/jacobhittinger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+				<a href="https://www.twitter.com/jacobhittinger"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+				<a href="https://www.facebook.com/jacobhittinger"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+			</div>
+		</header>
+
+		<!-- About Section -->
+		<div class="w3-container w3-grey" style="min-height:100%" id="about">
+			<h3 class="w3-center" style="padding:128px">ABOUT</h3>
+			<div class="w3-row-padding w3-grayscale">
+				<div class="w3-card-2">
+					<div class="w3-container w3-light-grey">
+						<p class="w3-large">
+							My name is Jacob Hittinger. I am an Information Security Analyst with a heavy focus in Information 
+							Security Engineering. I graduated from Eastern Washington University (EWU), with a Bachelor of 
+							Science in Computer Science (BSCS). My hobbies include coding, gaming, and playing hockey. My 
+							technological background is fairly diverse. In addition to security, I have experience in software 
+							engineering, parallel/cloud computing, mobile development, networking, and databases.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		
-		<img src="./LandingPage.png" alt="lol brb">
-		
+		<!-- Contact Section -->
+		<div class="w3-container w3-grey" style="min-height:100%" id="contact">
+			<h3 class="w3-center" style="padding:128px">CONTACT</h3>
+			<div class="w3-row-padding w3-grayscale">
+				<div class="w3-card-2">
+					<div class="w3-container w3-light-grey">
+						<p class="w3-center w3-large">
+							Got questions? Have a cool project idea? Just want to talk about code? Whatever it is, you can 
+							contact me here:
+							</br>
+							</br>
+							<i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>
+								<a href="mailto:jacob@hittinger.io"
+									target="_top">jacob@hittinger.io</a>
+						</p>
+						</br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Spacing -->
+		<div class="w3-container w3-grey" style="padding:128px 16px"></div>
+
+		<!-- Footer -->
+		<footer class="w3-center w3-black w3-padding-32">
+			<div class="w3-section w3-text-grey w3-xxlarge">
+				<a href="https://www.github.com/jacobhittinger"><i class="fa fa-github w3-hover-opacity"></i></a>
+				<a href="https://www.linkedin.com/in/jacobhittinger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+				<a href="https://www.facebook.com/jacobhittinger"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+				<a href="https://www.twitter.com/jacobhittinger"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+			</div>
+			<div class="w3-center">
+
+				Powered by <a href="https://www.w3schools.com/w3css/">W3.CSS</a></br>
+				Original template courtesy of <a href="https://www.w3schools.com/w3css/tryw3css_templates_startup.htm">W3</a></br>
+				Dev-themed icons thanks to <a href="https://konpa.github.io/devicon/">DEVICON</a></br>
+				Header images provided by <a href="https://www.instagram.com/lit__luke">Luke Hittinger</a>
+
+			</div>
+		</footer>
+
+		<script>
+			// Toggle between showing and hiding the sidebar when clicking the menu icon
+			var mySidebar = document.getElementById("mySidebar");
+			var myOverlay = document.getElementById("myOverlay");
+
+			// Open the sidebar, turn on overlay shadow
+			function w3_open() {
+				if (mySidebar.style.display === 'block') {
+					mySidebar.style.display = 'none';
+					myOverlay.style.display = 'none';
+				} else {
+					mySidebar.style.display = 'block';
+					myOverlay.style.display = 'block';
+				}
+			}
+
+			// Close the sidebar, turn off overlay shadow
+			function w3_close() {
+				mySidebar.style.display = 'none';
+				myOverlay.style.display = 'none';
+			}
+		</script>
 	</body>
 </html>
